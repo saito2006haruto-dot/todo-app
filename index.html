@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TODOリスト（検索・タグ・優先度ソート）</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>TODOリスト</h1>
+
+  <!-- タスク入力 -->
+  <input id="taskInput" placeholder="タスクを入力" maxlength="100">
+  <input id="taskDate" type="date">
+  <input id="taskTime" type="time">
+  <select id="priority">
+    <option value="normal">通常</option>
+    <option value="important">重要</option>
+    <option value="urgent">緊急</option>
+  </select>
+  <input id="tags" placeholder="タグをカンマ区切りで入力">
+  <select id="repeat">
+    <option value="none">繰り返しなし</option>
+    <option value="daily">毎日</option>
+    <option value="weekly">毎週</option>
+    <option value="monthly">毎月</option>
+  </select>
+  <button type="button" id="addBtn">追加</button>
+
+  <!-- 検索 -->
+  <input id="searchInput" placeholder="タスク検索">
+
+  <!-- フィルター -->
+  <div class="filters">
+    <button type="button" data-filter="all">全て</button>
+    <button type="button" data-filter="active">未完了</button>
+    <button type="button" data-filter="completed">完了</button>
+  </div>
+
+  <!-- タスクリスト -->
+  <ul id="taskList"></ul>
+
+  <!-- カレンダー表示 -->
+  <div id="calendarContainer">
+    <h2>カレンダー表示</h2>
+    <div id="calendar"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
