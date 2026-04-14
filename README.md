@@ -24,6 +24,7 @@ https://saito2006haruto-dot.github.io/todo-app/
 
 ### 管理機能
 - タスクの状態管理（未完了・完了など）
+- タスクの優先度割り当て(重要・緊急など)
 
 ### データ保存
 - LocalStorageによるデータ保存
